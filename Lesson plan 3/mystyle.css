@@ -1,0 +1,49 @@
+* {
+	
+}
+
+body {
+	background-color: yellow;
+}
+
+h1 {
+	background-color: red;
+	color: blue;
+	text-align: center;
+}
+
+h2 {
+	background: #AA00ff;
+	color: black;
+	text-align: center;
+	padding: 15px;
+	border-style: dashed;
+	border-width: 15px 15px 25px 40px;
+	border-color: red;
+	border-radius: 13px;
+	margin-left: 10px;
+}
+
+ul {
+	background: orange;
+	color: purple;
+	text-align: left;
+	border: 10px;
+	border-radius: 5%;
+	border-color: black;
+	border-style: dashed;
+}
+
+ol {
+	background: red;
+	color: white;
+	text-indent: 3em;
+	text-decoration: underline;
+	border-radius: 5%;
+	border: 5px dotted green;
+}
+
+p {
+	font-family: impact, charcoal, sans-serif;
+}
+
