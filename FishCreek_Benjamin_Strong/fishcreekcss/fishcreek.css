@@ -1,12 +1,8 @@
 * {
-	background-color: #ffffffff;
+	background-color: #FFFFFFFF;
 	color: #003366;
 	font-family: Verdana;
-}
-
-body {
 	width: 80%;
-	background-color: lightgrey;
 }
 
 header {
@@ -43,6 +39,9 @@ footer {
 	font-style: italic;
 }
 
-.category {
-	
+#wrapper {
+	background-color: #F0F0F0;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
 }
