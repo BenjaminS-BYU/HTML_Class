@@ -1,0 +1,52 @@
+﻿body {
+    background-color: #000000;
+}
+
+#wrapper {
+    background: #ffffff;
+    padding: 1em;
+    border-radius: 1em;
+    width: 80%;
+    margin: auto;
+    min-width: 300px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+img {
+    margin: 1em;
+    box-shadow: 10px 10px 1em #777;
+    width: 20px;
+    height: auto;
+}
+
+#bird1 {
+    flex: 3;
+}
+#bird2 {
+    flex: none;
+}
+#bird3 {
+    flex: auto;
+}
+#bird4 {
+    flex: initial;
+}
+#bird5 {
+    flex: 1;
+}
+#bird6 {
+    flex: 6;
+}
+
+figure {
+    outline: 1px solid #000000;
+}
