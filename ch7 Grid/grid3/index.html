@@ -47,12 +47,11 @@ nav a:hover { color: #FFFFFF; }
     #wrapper {
         width: 1020px;
         display: grid;
-        grid-template-columns: 150px 1fr 30%;
-        grid-template-rows: 100px auto 50px;
-        grid-template-areas:
-            "header header header"
-            "nav main aside"
-            "footer footer footer"
+        grid-template:
+            "header header header" 150px
+            "nav main aside" auto
+            "footer footer footer" 50px
+            / 150px 1fr 30%;
     }
 aside {  padding: 1em;
          grid-area: aside;
