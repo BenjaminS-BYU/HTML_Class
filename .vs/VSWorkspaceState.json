@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Ch7 Flex",
+    "\\Ch7 Flex\\flex2",
+    "\\ch7 grid",
+    "\\ch7 grid\\grid1"
   ],
+  "SelectedNode": "\\ch7 grid\\grid1\\mystyle.css",
   "PreviewInSolutionExplorer": false
 }
