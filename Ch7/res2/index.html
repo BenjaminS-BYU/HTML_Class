@@ -3,6 +3,7 @@
 <head>
 <title>Lighthouse Bistro</title>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <style>
 * { box-sizing: border-box;
     margin: 0;
@@ -19,7 +20,11 @@ header { color: #00005D;
 		background-image: url(light.gif);
 	    background-repeat: no-repeat;		
 		background-size: auto 100%;
-        padding: .5em 0 .5em 5.5em;
+}
+header h1 {
+    text-align: center;
+    height: 50px;
+    min-width: 350px;
 }
 main {   background-color: #FFFFFF;
          color: #000000;
@@ -59,6 +64,59 @@ nav #page { font-weight: bold;
 
 /* Force older versions of Internet Explorer to display these HTML5 elements with block display. */
 header, nav, main, footer, aside, figure { display: block; }
+
+@media(min-width: 600px) {
+    #wrapper {
+        display: grid;   
+        grid-template: "header header"
+        "nav nav" 
+        "main aside" 
+        "footer footer" / 55%
+    }
+    header {
+        grid-area: header;
+    }
+    nav {
+        grid-area: nav;
+    }
+        nav ul {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            border-bottom: 1px solid #EEEEEE;
+        }
+    nav li {
+        border-bottom: 0;
+    }
+    main {
+        grid-area: main;
+    }
+    footer {
+        grid-area: footer;
+    }
+    aside {
+        grid-area: aside;
+    }
+}
+
+@media(min-width: 1024px) {
+    body {
+        background-color: #000066;
+    }
+    #wrapper {
+        width: 80%;
+        margin: auto;
+        max-width: 1200px;
+        grid-template: "header header header" auto
+            "nav main aside" auto
+            "footer footer footer" 150px
+    }
+    nav ul {
+        flex-flow: column wrap;
+        border-bottom: 0;
+        padding: 1em;
+    }
+}
 
 </style> 
 </head>
