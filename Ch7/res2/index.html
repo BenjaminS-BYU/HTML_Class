@@ -67,11 +67,12 @@ header, nav, main, footer, aside, figure { display: block; }
 
 @media(min-width: 600px) {
     #wrapper {
-        display: grid;   
+        height: 100vh;
+        display: grid;
         grid-template: "header header"
-        "nav nav" 
-        "main aside" 
-        "footer footer" / 55%
+            "nav nav"
+            "main aside"
+            "footer footer" / 55%
     }
     header {
         grid-area: header;
@@ -104,12 +105,11 @@ header, nav, main, footer, aside, figure { display: block; }
         background-color: #000066;
     }
     #wrapper {
+        height: auto;
         width: 80%;
         margin: auto;
         max-width: 1200px;
-        grid-template: "header header header" auto
-            "nav main aside" auto
-            "footer footer footer" 150px
+        grid-template: "header header header" auto "nav main aside" auto "footer footer footer" 50px / 150px;
     }
     nav ul {
         flex-flow: column wrap;
